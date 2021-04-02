@@ -3,11 +3,13 @@
 import unittest
 from fractions import Fraction
 
+
 def sum(arg):
     total = 0
     for val in arg:
         total += val
     return total
+
 
 class TestSum(unittest.TestCase):
     def test_list_int(self):
@@ -35,6 +37,7 @@ class TestSum(unittest.TestCase):
         data = "banana"
         with self.assertRaises(TypeError):
             result = sum(data)
+
 
 if __name__ == "__main__":
     unittest.main()
