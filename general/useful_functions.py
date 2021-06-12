@@ -1,7 +1,20 @@
-from datetime import datetime
+"""
+useful settings
+"""
+## print array in full size
+# import sys
+# import numpy
+# numpy.set_printoptions(threshold=sys.maxsize)
+
+
+"""
+useful functions
+"""
 
 
 def print_time_to_miliseconds():
+    from datetime import datetime
+
     print(datetime.utcnow().strftime("%Y%m%d-%H:%M:%S.%f"))
 
 
